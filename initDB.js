@@ -22,7 +22,7 @@ async function main() {
        name VARCHAR(50) NOT NULL,
        surname VARCHAR(50) NOT NULL,
        direccion VARCHAR(100) NOT NULL,
-       email VARCHAR(100) NOT NULL
+       email VARCHAR(100) UNIQUE
      );
    `);
    

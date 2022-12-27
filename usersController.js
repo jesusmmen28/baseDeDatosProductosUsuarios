@@ -1,10 +1,6 @@
 const { getConnection } = require("./db");
 
 const listUsuarios = async (req, res) => {
-    // este endpoint es para obtener la lista de participantes 
-    // (entendidos como los usuarios dados de alta en el sistema
-    // , no confundir con los participantes de una carrera)
-
     let connection;
 
     try {

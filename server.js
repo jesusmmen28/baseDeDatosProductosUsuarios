@@ -20,9 +20,9 @@ app.use((req, res, next) => {
     next()
 })
 
-app.get('/usuarios', listUsuarios)
+app.get('/usersController', listUsuarios)
 
-app.post('/usuarios', addUsuarios)
+app.post('/usersController', addUsuarios)
 /*
 app.get('/productos', listProductos)
 
@@ -30,10 +30,10 @@ app.post('/productos', addProductos)*/
 
 app.get('/', function (req, res) {
     console.log('estoy en la función controllador de GET /')
-    res.send('Hello World')
+    res.send('Hello')
 })
 
-app.listen(5500)
+app.listen(5100)
 
 
 

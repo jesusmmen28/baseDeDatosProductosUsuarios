@@ -28,6 +28,14 @@ app.get('/productos', listProductos)
 
 app.post('/productos', addProductos)*/
 
+ 
+
+app.use ((req,res) => { 
+
+    res.status(404).send('No se encontró tu página') 
+
+}) 
+
 app.get('/', function (req, res) {
     console.log('estoy en la función controllador de GET /')
     res.send('Hello')
